@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+        .container {
+            display: flex;
+          }
+          .left {
+            width: 40%;
+          }
+          .right {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+    </style>
+  </head>
+  <body>
+    <div id="habitChart" style="max-width: 600px; margin: auto;"></div>
+
+
+    <script>
+        const options = {
+            chart: {
+              type: 'bar',
+              height: 350,
+              toolbar: { show: false }
+            },
+            series: [
+              {
+                name: 'Acqua',
+                data: [1, 0.6, 0.5, 0.1, 1, 0.2, 1]
+              },
+              {
+                name: 'Lettura',
+                data: [0.5, 0, 0.4, 0.7, 0.1, 0.2, 0.9]
+              },
+              {
+                name: 'Meditazione',
+                data: [0.1, 0.2, 0.5, 1, 0.4, 0.1, 0.4]
+              }
+            ],
+            xaxis: {
+              categories: ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom']
+            },
+            plotOptions: {
+              bar: {
+                horizontal: false,
+                columnWidth: '50%',
+                endingShape: 'rounded'
+              }
+            },
+            dataLabels: { enabled: false },
+            legend: { position: 'top' },
+            title: {
+              text: 'Progressi settimanali (esempio)',
+              align: 'center'
+            },
+            colors: ['#00BFFF', '#FFD700', '#32CD32'],
+            yaxis: {
+              min: 0,
+              max: 1,
+              tickAmount: 1
+            }
+          };
+          
+          const chart = new ApexCharts(document.querySelector("#habitChart"), options);
+          chart.render();
+          
+    </script>
+  </body>
+</html>

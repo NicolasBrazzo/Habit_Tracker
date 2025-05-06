@@ -1,0 +1,93 @@
+@import url(./_variables.css);
+
+.hero {
+  position: relative;
+  color: white;
+  padding: 200px 60px;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.hero h1 {
+  font-size: 30pt;
+}
+
+.sfera_left {
+  position: absolute;
+  width: 200px;
+  left: 150px;
+  top: 350px;
+  height: 200px;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.sfera_left::before {
+  content: "";
+  position: absolute;
+  top: -250px;
+  left: 180px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+}
+
+.sfera_right {
+  top: 300px;
+  right: 100px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.sfera_right::before {
+  content: "";
+  position: absolute;
+  top: -250px;
+  right: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+}
+
+.sfera_right::after {
+  content: "";
+  position: absolute;
+  top: 200px;
+  right: 350px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+}
+
+/* INFORMATION */
+#information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 30px 70px;
+  border-radius: 20px;
+}
+
+#information .card {
+  background-color: var(--purple-one);
+  margin: 20px;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 300px;
+  width: 290px;
+}

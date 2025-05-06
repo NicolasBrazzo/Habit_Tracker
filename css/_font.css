@@ -1,0 +1,18 @@
+h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* puoi cambiare da 100 a 900 */
+    font-style: normal;
+}
+a, p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* puoi cambiare da 100 a 900 */
+    font-style: normal;
+}
+h2, h4{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* puoi cambiare da 100 a 900 */
+    font-style: normal;
+}

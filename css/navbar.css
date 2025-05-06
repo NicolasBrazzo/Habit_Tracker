@@ -1,0 +1,16 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto;
+    gap: 30px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: white;
+  }
